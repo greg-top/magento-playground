@@ -1,0 +1,7 @@
+<?php
+$text = Mage::app()->getStore()->getConfig('greg_banner/settings/text');
+if (! $text) return;
+?>
+<div class="greg-banner clearfix std">
+    <p class="greg-banner__text"><?php echo $text; ?></p>
+</div>

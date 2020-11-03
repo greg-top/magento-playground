@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem" ifconfig="greg_banner/settings/enabled">
+                <type>skin_css</type>
+                <url>greg_banner/banner.css</url>
+            </action>
+        </reference>
+        <reference name="after_body_start">
+            <block type="greg_banner/banner" name="greg.banner" before="-">
+                <action method="setTemplate" ifconfig="greg_banner/settings/enabled">
+                    <template>greg_banner/banner.phtml</template>
+                </action>
+            </block>
+        </reference>
+    </default>
+</layout>

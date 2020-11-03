@@ -9,11 +9,7 @@
         <models>
             <greg_banner>
                 <class>Greg_Banner_Model</class>
-                <resourceModel>greg_banner_resource</resourceModel>
             </greg_banner>
-            <greg_banner_resource>
-                <class>Greg_Banner_Model_Resource</class>
-            </greg_banner_resource>
         </models>
         <blocks>
             <greg_banner>
