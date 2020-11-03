@@ -13,5 +13,26 @@ class Greg_Banner_Block_Banner extends  Mage_Core_Block_Template
         return $this;
     }
 
+    /**
+     * @return bool
+     * @throws Mage_Core_Model_Store_Exception
+     */
+    public function render()
+    {
+        $isBannerText = $this->getBannerText();
+
+        if($isBannerText) {
+            return true;
+        }
+    }
+
+    /**
+     * @return string|null
+     * @throws Mage_Core_Model_Store_Exception
+     */
+     public function getBannerText()
+     {
+         return Mage::app()->getStore()->getConfig('greg_banner/settings/text');
+     }
 
 }
