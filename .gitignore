@@ -1,0 +1,51 @@
+.DS_Store
+.idea/*
+.phpstorm.meta.php
+.modman
+error_log
+n98-magerun.phar
+robots.txt
+
+#DB access
+zzz_local.xml
+app/etc/zzz_local_dev.xml
+
+#Dev files
+.htaccess_dev
+app/etc/modules/zzz_disabled_modules.xml
+app/code/community/SF9/DevImages
+app/etc/local.xml.live
+app/etc/modules/SF9_DevImages.xml
+app/etc/zzz_local_dev.xml
+docs/
+
+bin/*
+doc/*
+downloader/*
+healthcheck/*
+media/*
+tmp/*
+stage/*
+sitemap/*
+var/*
+!var/.htaccess
+vendor/*
+
+.modman/
+
+.sass-cache
+node_modules
+bower_components
+
+# Wordpress integration
+wordpress/wp-config.php
+wordpress/wp-content/debug.log
+wordpress/wp-content/uploads/*
+
+# Live changes
+fileauth.txt
+google03e2838a508c8422.html
+media
+sitemap
+sitemap.xml
+var
