@@ -49,4 +49,18 @@ class Greg_Banner_Block_Banner extends  Mage_Core_Block_Template
          return Mage::app()->getStore()->getConfig('greg_banner/settings/position');
      }
 
+    public function customizeBanner()
+    {
+        return Mage::app()->getStore()->getConfig('greg_banner/customization/enabled');
+    }
+
+     public function getBgColor()
+     {
+         return Mage::app()->getStore()->getConfig('greg_banner/customization/bg_color');
+     }
+
+     public function getFontColor()
+     {
+         return Mage::app()->getStore()->getConfig('greg_banner/customization/text_color');
+     }
 }

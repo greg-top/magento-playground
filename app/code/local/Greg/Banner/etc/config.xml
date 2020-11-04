@@ -38,4 +38,13 @@
             </updates>
         </layout>
     </frontend>
+    <adminhtml>
+        <layout>
+            <updates>
+                <basket>
+                    <file>picker.xml</file>
+                </basket>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>
