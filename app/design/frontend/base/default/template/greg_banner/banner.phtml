@@ -1,5 +1,14 @@
 <?php if($this->render()): ?>
-    <div class="greg-banner clearfix std">
-        <p class="greg-banner__text"><?php echo $this->getBannerText();; ?></p>
+    <div class="greg-banner <?php if(!$this->getBannerPosition()): ?>greg-banner--bottom<?php endif; ?> clearfix std">
+        <?php if($this->getBannerLink()): ?>
+            <a class="greg-banner__link" href="<?php echo $this->getBannerLink() ?>">
+                <p class="greg-banner__text"><?php echo $this->getBannerText();; ?></p>
+            </a>
+        <?php else: ?>
+            <p class="greg-banner__text"><?php echo $this->getBannerText();; ?></p>
+        <?php endif; ?>
     </div>
+
+<?php
+?>
 <?php endif; ?>

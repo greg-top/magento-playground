@@ -35,4 +35,18 @@ class Greg_Banner_Block_Banner extends  Mage_Core_Block_Template
          return Mage::app()->getStore()->getConfig('greg_banner/settings/text');
      }
 
+     public function getBannerLink()
+     {
+         return Mage::app()->getStore()->getConfig('greg_banner/settings/link');
+     }
+
+    /**
+     * @return string|null
+     * @throws Mage_Core_Model_Store_Exception
+     */
+     public function getBannerPosition()
+     {
+         return Mage::app()->getStore()->getConfig('greg_banner/settings/position');
+     }
+
 }

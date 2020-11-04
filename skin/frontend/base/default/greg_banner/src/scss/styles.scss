@@ -2,14 +2,29 @@
   background: #333;
   padding: 10px 0;
   text-align: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 200;
+  &.greg-banner--bottom {
+    bottom: 0;
+  }
   .greg-banner__text{
     color: #fff;
     margin: 0;
     font-size: 14px;
     line-height: 20px;
-    .greg-banner__link {
-      color: #fff;
-      text-decoration: underline;
+  }
+  .greg-banner__link {
+    color: #fff;
+    transition: font-weight .5s ease;
+    .greg-banner__text {
+      transition: font-size .5s ease;
+    }
+    &:hover {
+      text-decoration: none;
+      p {
+        font-size: 14.5px;
+      }
     }
   }
 }
